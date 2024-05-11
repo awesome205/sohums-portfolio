@@ -7,7 +7,7 @@ const NavBar = (props) => {
 	const { active } = props;
 
 	return (
-		<React.Fragment>
+		<>
 			<div className="nav-container">
 				<nav className="navbar">
 					<div className="nav-background">
@@ -37,16 +37,7 @@ const NavBar = (props) => {
 										: "nav-item"
 								}
 							>
-								<Link to="/projects">Projects</Link>
-							</li>
-							<li
-								className={
-									active === "articles"
-										? "nav-item active"
-										: "nav-item"
-								}
-							>
-								<Link to="/articles">Articles</Link>
+								<Link to="/projects">My Work</Link>
 							</li>
 							<li
 								className={
@@ -55,13 +46,27 @@ const NavBar = (props) => {
 										: "nav-item"
 								}
 							>
-								<Link to="/contact">Contact</Link>
+								<Link to="/contact">Contact Me :)</Link>
+							</li>
+							<li
+								className={
+									active === "contact"
+										? "nav-item active"
+										: "nav-item"
+								}
+							>
+								<Link
+									to="https://drive.google.com/file/d/1C4_PJt-D3ObKvPJjNWo_6ulvIqp5nU8x/view?usp=sharing"
+									target="_blank"
+								>
+									Resume
+								</Link>
 							</li>
 						</ul>
 					</div>
 				</nav>
 			</div>
-		</React.Fragment>
+		</>
 	);
 };
 

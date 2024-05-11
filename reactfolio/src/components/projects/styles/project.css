@@ -27,7 +27,9 @@
 }
 
 .project-logo {
-	width: 30px;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
 }
 
 .project-logo img {

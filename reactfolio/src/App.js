@@ -5,10 +5,11 @@ import ReactGA from "react-ga4";
 import Homepage from "./pages/homepage";
 import About from "./pages/about";
 import Projects from "./pages/projects";
-import Articles from "./pages/articles";
-import ReadArticle from "./pages/readArticle";
 import Contact from "./pages/contact";
 import Notfound from "./pages/404";
+import Project1 from "./pages/project1";
+import Project2 from "./pages/project2";
+import Project3 from "./pages/project3";
 
 import { TRACKING_ID } from "./data/tracking";
 import "./app.css";
@@ -26,10 +27,11 @@ function App() {
 				<Route path="/" element={<Homepage />} />
 				<Route path="/about" element={<About />} />
 				<Route path="/projects" element={<Projects />} />
-				<Route path="/articles" element={<Articles />} />
-				<Route path="/article/:slug" element={<ReadArticle />} />
 				<Route path="/contact" element={<Contact />} />
 				<Route path="*" element={<Notfound />} />
+				<Route path="/project1" element={<Project1 />} />
+				<Route path="/project2" element={<Project2 />} />
+				<Route path="/project3" element={<Project3 />} />
 			</Routes>
 		</div>
 	);

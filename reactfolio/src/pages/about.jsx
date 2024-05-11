@@ -1,13 +1,7 @@
 import React, { useEffect } from "react";
-import { Helmet } from "react-helmet";
-
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
-import Socials from "../components/about/socials";
-
-import INFO from "../data/user";
-import SEO from "../data/seo";
 
 import "./styles/about.css";
 
@@ -16,19 +10,8 @@ const About = () => {
 		window.scrollTo(0, 0);
 	}, []);
 
-	const currentSEO = SEO.find((item) => item.page === "about");
-
 	return (
-		<React.Fragment>
-			<Helmet>
-				<title>{`About | ${INFO.main.title}`}</title>
-				<meta name="description" content={currentSEO.description} />
-				<meta
-					name="keywords"
-					content={currentSEO.keywords.join(", ")}
-				/>
-			</Helmet>
-
+		<>
 			<div className="page-content">
 				<NavBar active="about" />
 				<div className="content-wrapper">
@@ -42,11 +25,25 @@ const About = () => {
 						<div className="about-main">
 							<div className="about-right-side">
 								<div className="title about-title">
-									{INFO.about.title}
+									I'm Sohum Sanu, an ambitious and curious
+									product manager
 								</div>
 
 								<div className="subtitle about-subtitle">
-									{INFO.about.description}
+									I've worked on a variety of projects over
+									the years and I'm proud of the progress I've
+									made. I'm also proud to be the co-president
+									of Brown University's Entrepreneurship
+									Program. I work closely with our
+									administration to support the founders
+									around campus.
+									<br></br>
+									Outside of the professional realm, I also
+									have a lot of interests. I love to sing and
+									play guitar and am in a Indie-Funk-Pop band
+									at Brown. I also love to run, play
+									pickleball, and will always go
+									dessert-hunting.
 								</div>
 							</div>
 
@@ -54,20 +51,13 @@ const About = () => {
 								<div className="about-image-container">
 									<div className="about-image-wrapper">
 										<img
-											src="about.jpg"
+											src={require("./IMG_9026.jpg")}
 											alt="about"
 											className="about-image"
 										/>
 									</div>
 								</div>
-
-								<div className="about-socials">
-									<Socials />
-								</div>
 							</div>
-						</div>
-						<div className="about-socials-mobile">
-							<Socials />
 						</div>
 					</div>
 					<div className="page-footer">
@@ -75,7 +65,7 @@ const About = () => {
 					</div>
 				</div>
 			</div>
-		</React.Fragment>
+		</>
 	);
 };
 

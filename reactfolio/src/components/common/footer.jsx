@@ -5,7 +5,7 @@ import "./styles/footer.css";
 
 const Footer = () => {
 	return (
-		<React.Fragment>
+		<>
 			<div className="footer">
 				<div className="footer-links">
 					<ul className="footer-nav-link-list">
@@ -19,21 +19,23 @@ const Footer = () => {
 							<Link to="/projects">Projects</Link>
 						</li>
 						<li className="footer-nav-link-item">
-							<Link to="/articles">Articles</Link>
+							<Link to="/contact">Contact</Link>
 						</li>
 						<li className="footer-nav-link-item">
-							<Link to="/contact">Contact</Link>
+							<Link to="https://drive.google.com/file/d/1C4_PJt-D3ObKvPJjNWo_6ulvIqp5nU8x/view?usp=sharing" target="_blank">
+								Resume
+							</Link>
 						</li>
 					</ul>
 				</div>
 
 				<div className="footer-credits">
 					<div className="footer-credits-text">
-						© 2023 Tharindu.dev. All Rights Reserved.
+						© 2023 All Rights Reserved.
 					</div>
 				</div>
 			</div>
-		</React.Fragment>
+		</>
 	);
 };
 

@@ -16,7 +16,7 @@ const Notfound = () => {
 	}, []);
 
 	return (
-		<React.Fragment>
+		<>
 			<div className="not-found page-content">
 				<NavBar />
 				<div className="content-wrapper">
@@ -44,7 +44,7 @@ const Notfound = () => {
 					</div>
 				</div>
 			</div>
-		</React.Fragment>
+		</>
 	);
 };
 

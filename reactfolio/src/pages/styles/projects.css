@@ -14,14 +14,6 @@
 	z-index: 999;
 }
 
-.projects-container {
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-	margin: 0;
-	padding-top: 120px;
-}
-
 @media (max-width: 600px) {
 	.projects-container {
 		padding-top: 60px;
@@ -30,4 +22,126 @@
 	.projects-project {
 		width: calc(100% / 2);
 	}
+}
+
+.project-container {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	margin: 20px;
+	padding-top: 120px;
+	height: 100%;
+	margin: 0;
+	padding-top: 120px;
+}
+
+.titles {
+	display: flex;
+}
+.titles div {
+	flex: 0 0 25%;
+	max-width: 25%;
+}
+
+.proj-label {
+	background-color: rgba(0, 184, 148, 0.05);
+	color: #8ecfe7;
+	border: 1px solid #8ecfe7;
+	padding: 0.5em 0.8em;
+	font-weight: 400;
+	margin-bottom: 0.5em;
+}
+.badge {
+	display: inline-block;
+	padding: 0.5em 0.8em;
+	font-size: 75%;
+	font-weight: 700;
+	line-height: 1;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	border-radius: 0.25rem;
+	margin-left: 4px;
+	/* transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out; */
+}
+figure {
+	display: block;
+	/* margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px; */
+	unicode-bidi: isolate;
+}
+
+figure img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: left;
+}
+.imgphoto {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 10px;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+	margin-top: 20px;
+}
+.para1 {
+	margin: 0;
+	font-style: italic;
+	font-size: 12px;
+}
+.problem {
+	display: flex;
+	flex-direction: column;
+}
+.problem div {
+	display: flex;
+	justify-content: space-between;
+}
+.problem p {
+	margin-left: 30px;
+	margin-top: 20px;
+}
+
+.partiful {
+	height: 100%;
+	width: 1000px;
+}
+.monster {
+	height: 40%;
+	width: 100%;
+}
+.lofi img {
+	height: 20%;
+	width: 20%;
+}
+.lofi {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.hifi1 {
+	justify-content: space-around;
+}
+
+.monsterpic {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	/* border-radius: 10px; */
+	/* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); */
+	/* margin-top: 20px; */
+}
+
+.monsterpic img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	border-radius: 10px;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+	margin-top: 20px;
 }

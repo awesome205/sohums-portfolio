@@ -14,6 +14,9 @@
 	padding: 10px;
 	overflow: hidden;
 }
+.buttonover {
+	color: #C69A78!important;
+}
 
 @media (max-width: 600px) {
 	.all-projects-project {
